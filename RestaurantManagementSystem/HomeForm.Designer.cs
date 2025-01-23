@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeForm));
             menuStrip1 = new MenuStrip();
             itemsToolStripMenuItem = new ToolStripMenuItem();
             addItemsToolStripMenuItem = new ToolStripMenuItem();
@@ -47,10 +48,13 @@
             // 
             // menuStrip1
             // 
+            menuStrip1.BackColor = Color.Gold;
+            menuStrip1.Font = new Font("Verdana", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             menuStrip1.Items.AddRange(new ToolStripItem[] { itemsToolStripMenuItem, userToolStripMenuItem, billToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 24);
+            menuStrip1.Padding = new Padding(7, 2, 0, 2);
+            menuStrip1.Size = new Size(806, 24);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -58,93 +62,98 @@
             // 
             itemsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { addItemsToolStripMenuItem, edToolStripMenuItem, deleteItemsToolStripMenuItem, exitToolStripMenuItem });
             itemsToolStripMenuItem.Name = "itemsToolStripMenuItem";
-            itemsToolStripMenuItem.Size = new Size(48, 20);
+            itemsToolStripMenuItem.Size = new Size(56, 20);
             itemsToolStripMenuItem.Text = "&Items";
             // 
             // addItemsToolStripMenuItem
             // 
             addItemsToolStripMenuItem.Name = "addItemsToolStripMenuItem";
-            addItemsToolStripMenuItem.Size = new Size(139, 22);
+            addItemsToolStripMenuItem.Size = new Size(180, 22);
             addItemsToolStripMenuItem.Text = "&Add Items";
             // 
             // edToolStripMenuItem
             // 
             edToolStripMenuItem.Name = "edToolStripMenuItem";
-            edToolStripMenuItem.Size = new Size(139, 22);
+            edToolStripMenuItem.Size = new Size(180, 22);
             edToolStripMenuItem.Text = "&Edit Items";
             // 
             // deleteItemsToolStripMenuItem
             // 
             deleteItemsToolStripMenuItem.Name = "deleteItemsToolStripMenuItem";
-            deleteItemsToolStripMenuItem.Size = new Size(139, 22);
+            deleteItemsToolStripMenuItem.Size = new Size(180, 22);
             deleteItemsToolStripMenuItem.Text = "&Delete Items";
             // 
             // exitToolStripMenuItem
             // 
             exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            exitToolStripMenuItem.Size = new Size(139, 22);
+            exitToolStripMenuItem.Size = new Size(180, 22);
             exitToolStripMenuItem.Text = "&Exit";
             // 
             // userToolStripMenuItem
             // 
             userToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { addNewUserToolStripMenuItem, deleteUserToolStripMenuItem, changePasswordToolStripMenuItem, viewUserToolStripMenuItem });
             userToolStripMenuItem.Name = "userToolStripMenuItem";
-            userToolStripMenuItem.Size = new Size(42, 20);
+            userToolStripMenuItem.Size = new Size(48, 20);
             userToolStripMenuItem.Text = "&User";
             // 
             // addNewUserToolStripMenuItem
             // 
             addNewUserToolStripMenuItem.Name = "addNewUserToolStripMenuItem";
-            addNewUserToolStripMenuItem.Size = new Size(168, 22);
+            addNewUserToolStripMenuItem.Size = new Size(190, 22);
             addNewUserToolStripMenuItem.Text = "Add &New User";
             // 
             // deleteUserToolStripMenuItem
             // 
             deleteUserToolStripMenuItem.Name = "deleteUserToolStripMenuItem";
-            deleteUserToolStripMenuItem.Size = new Size(168, 22);
+            deleteUserToolStripMenuItem.Size = new Size(190, 22);
             deleteUserToolStripMenuItem.Text = "&Delete User";
             // 
             // changePasswordToolStripMenuItem
             // 
             changePasswordToolStripMenuItem.Name = "changePasswordToolStripMenuItem";
-            changePasswordToolStripMenuItem.Size = new Size(168, 22);
+            changePasswordToolStripMenuItem.Size = new Size(190, 22);
             changePasswordToolStripMenuItem.Text = "&Change Password";
             // 
             // viewUserToolStripMenuItem
             // 
             viewUserToolStripMenuItem.Name = "viewUserToolStripMenuItem";
-            viewUserToolStripMenuItem.Size = new Size(168, 22);
+            viewUserToolStripMenuItem.Size = new Size(190, 22);
             viewUserToolStripMenuItem.Text = "&View User";
             // 
             // billToolStripMenuItem
             // 
             billToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { newBillToolStripMenuItem, viewBillToolStripMenuItem });
             billToolStripMenuItem.Name = "billToolStripMenuItem";
-            billToolStripMenuItem.Size = new Size(35, 20);
+            billToolStripMenuItem.Size = new Size(36, 20);
             billToolStripMenuItem.Text = "&Bill";
             // 
             // newBillToolStripMenuItem
             // 
             newBillToolStripMenuItem.Name = "newBillToolStripMenuItem";
-            newBillToolStripMenuItem.Size = new Size(118, 22);
+            newBillToolStripMenuItem.Size = new Size(127, 22);
             newBillToolStripMenuItem.Text = "&New Bill";
             // 
             // viewBillToolStripMenuItem
             // 
             viewBillToolStripMenuItem.Name = "viewBillToolStripMenuItem";
-            viewBillToolStripMenuItem.Size = new Size(118, 22);
+            viewBillToolStripMenuItem.Size = new Size(127, 22);
             viewBillToolStripMenuItem.Text = "&View Bill";
             // 
             // HomeForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 16F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackgroundImage = Properties.Resources.bg1;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(806, 480);
             Controls.Add(menuStrip1);
+            DoubleBuffered = true;
+            Font = new Font("Verdana", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             IsMdiContainer = true;
             MainMenuStrip = menuStrip1;
             Name = "HomeForm";
-            Text = "Form1";
+            Text = "Apna Restraunt";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
